@@ -3,16 +3,8 @@ var express = require('express');
 var router  = express.Router();
 var pomsgRouter = require('./pomsg')
 router.get('/', function(req, res) {
-  models.User.findAll({
-    include: [ models.Task ]
-  }).then(function(users) {
-    res.send({
-      title: 'Sequelize: Express Example',
-      users: users
-    });
-  });
+  res.send("App running")
 });
-
 
 router.use('/pomsg', pomsgRouter);
 

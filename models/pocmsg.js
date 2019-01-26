@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
   var Pomsg = sequelize.define('pocmsg', {
     poid: {type: DataTypes.INTEGER, primaryKey: true},
     warehouse: DataTypes.STRING,
-    item: DataTypes.INTEGER,
+    item: DataTypes.STRING,
     podate: DataTypes.DATE,
     pomsgeq : DataTypes.STRING,
     pomsg : DataTypes.TEXT
