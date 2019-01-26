@@ -54,7 +54,7 @@ function seed(req, res) {
     }
   ]).then(function(users) {
     res.send({
-      title: 'Sequelize: Express Example',
+      message: 'Seed completed',
       pocmsgs: users
     });
   });
