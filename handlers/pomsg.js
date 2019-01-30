@@ -11,6 +11,7 @@ function all(req, res) {
     var query = url_parts.query;
     console.log(query, "query");
     models.pocmsg.findAll({where: query}).then(function(users) {
+      console.log(users, "users search data")
       res.send({
         title: 'Sequelize: Express Example',
         pocmsgs: users

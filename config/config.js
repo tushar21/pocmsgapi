@@ -3,7 +3,7 @@ module.exports = {
     username: process.env.DATABASE_USERNAME || 'user1',
     password: process.env.DATABASE_PASSWORD || 'password1',
     database: process.env.DATABASE_NAME || 'pocdb',
-    host: process.env.DATABASE_HOSTNAME || '127.0.0.1',
+    host: process.env.DATABASE_HOSTNAME || 'pocmsg.cg5tdugqa2hh.us-east-1.rds.amazonaws.com',
     dialect: 'mysql'
   },
   test: {
